@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>www.RouteCraft.com</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🌍 AI Travel Itinerary Generator</h1>
+    <form id="itineraryForm">
+      <input type="text" id="destination" placeholder="Destination (e.g., Paris)" required>
+      <input type="number" id="days" placeholder="Number of Days" required>
+      <input type="text" id="interests" placeholder="Your Interests (e.g., adventure, food)">
+      <button type="submit">Generate Itinerary</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
